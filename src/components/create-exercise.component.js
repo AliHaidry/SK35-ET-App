@@ -22,9 +22,9 @@ export default class CreateExercise extends Component {
     }
   }
 
-  /** HOPIING TO MAKE IT WORK */
+  
   componentDidMount() {
-    axios.get('https://app-exercisetracker-backend.herokuapp.com/users/')
+    axios.get("https://app-exercisetracker-backend.herokuapp.com/users/")
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
@@ -75,7 +75,8 @@ export default class CreateExercise extends Component {
 
     console.log(exercise);
 
-    axios.post('https://app-exercisetracker-backend.herokuapp.com/add', exercise)
+    
+    axios.post("https://app-exercisetracker-backend.herokuapp.com/add", exercise)
       .then(res => console.log(res.data));
 
     window.location = '/';
