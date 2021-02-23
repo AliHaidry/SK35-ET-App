@@ -22,7 +22,7 @@ export default class CreateExercise extends Component {
     }
   }
 
-  /**  */
+  /** HOPIING TO MAKE IT WORK */
   componentDidMount() {
     axios.get('https://app-exercisetracker-backend.herokuapp.com/users/')
       .then(response => {
